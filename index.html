@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav flex">
+            <a id="anchor" class="company-logo">
+                <img src="assets\logo.png" alt="LOGO">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-items" id="ipl">IPL</li>
+                    <li class="hover-links nav-items" id="finance">Finance</li>
+                    <li class="hover-links nav-items" id="politics">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="input-text" type="text" class="news-input" placeholder="e.g. football">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container flex" id="cards-container">
+               
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="Img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab
+                    laborum quam a cum modi ipsam culpa atque nisi doloremque quod, maiores numquam nulla, officiis,
+                    quisquam placeat quas.</p>
+            </div>
+        </div> 
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
